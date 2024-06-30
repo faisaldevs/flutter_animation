@@ -17,7 +17,7 @@ class _ExampleTwoState extends State<ExampleTwo>
   @override
   void initState() {
     _controller =
-        AnimationController(vsync: this, duration: Duration(seconds: 2))
+        AnimationController(vsync: this, duration: const Duration(seconds: 2))
           ..repeat();
     _animation = Tween(begin: 0.0, end: 2 * pi).animate(_controller);
     super.initState();
